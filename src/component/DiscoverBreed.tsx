@@ -7,6 +7,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from "react-query";
+import CatCard from "./CatCard";
 const DiscoverBreed = () => {
   // const queryClient = useQueryClient()
 
@@ -34,22 +35,7 @@ const DiscoverBreed = () => {
         </a>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-8 m-12 ">
-        {/* 
-{isLoading ? 'Loading data' : 'loadede'} */}
-        {data?.data.slice(0, 4).map((item: any) => {
-          return (
-            <div className="">
-              <img
-                src={item?.image?.url}
-                alt="cats"
-                className=" w-56 h-56 object-cover rounded-3xl"
-              />
-              <p className="mt-8 font-semibold text-basic-text">{item.name}</p>
-            </div>
-          );
-        })}
-      </div>
+     <CatCard data={data?.data} ></CatCard>
     </div>
   );
 };
