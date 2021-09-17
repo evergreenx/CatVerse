@@ -6,3 +6,10 @@
 body{
   font-family: 'Montserrat', sans-serif;
 }
+
+
+.hero{
+  background-image: url(./assets/image/HeroImagelg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -3,7 +3,7 @@ import Logo from "../assets/image/CatwikiLogo.svg";
 
 const Header = () => {
   return (
-    <header className="mt-9">
+    <header className="my-9">
       <img src={Logo} alt="logo" />
     </header>
   );
