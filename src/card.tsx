@@ -1,16 +1,11 @@
-import React from 'react'
+import React from "react";
 
 type Cardtagprops = {
+  name: string;
+};
 
-    name : string
+function card(props: Cardtagprops) {
+  return <div></div>;
 }
 
-function card(props :Cardtagprops ) {
-    return (
-        <div>
-            
-        </div>
-    )
-}
-
-export default card
+export default card;
