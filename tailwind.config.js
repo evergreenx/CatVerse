@@ -11,6 +11,7 @@ module.exports = {
         'basic-grey':'#E3E1DC',
         'basic-text' : '#291507',
         
+        
         'hero-action':' #FFF0DC',
         'black-text':' #828282',
         'testimonial-bg' : '#FFF8ED'
