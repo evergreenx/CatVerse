@@ -36,7 +36,7 @@ const DiscoverBreed = () => {
         </Link>
       </div>
 
-     <CatCard data={data?.data} ></CatCard>
+      <CatCard data={data?.data}></CatCard>
     </div>
   );
 };

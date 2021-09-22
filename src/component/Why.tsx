@@ -3,7 +3,7 @@ import CatImg1 from "../assets/image/image 1.png";
 import CatImg2 from "../assets/image/image 2.png";
 import CatImg3 from "../assets/image/image 3.png";
 
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const Why = () => {
   return (

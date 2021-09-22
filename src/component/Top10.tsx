@@ -6,47 +6,40 @@ import {
   useQueryClient,
   QueryClient,
   QueryClientProvider,
-} from "react-query"
+} from "react-query";
+import LoaderBar from "../component/LoaderBar";
 
-import Loader from '../assets/image/loader.gif'
+import Header from "./Header";
 const Top10 = () => {
-
   const { data, isLoading } = useQuery("cats", () =>
-  axios.get("https://api.thecatapi.com/v1/breeds")
-);
+    axios.get("https://api.thecatapi.com/v1/breeds")
+  );
 
-
-if(!isLoading) {
-
-
-  return(
-
-    <div className="flex justify-center items-center w-full">
-
-      <img src={Loader} alt="loader" />
-    </div>
-
-
-
-  )
-}
-
-
-
-
-
-
+  if (isLoading) {
+    return <LoaderBar />;
+  }
 
   return (
-    <div className="bg-yellow-700 w-full h-full text-white">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. In ad mollitia
-      fuga quos quae, quasi consequuntur vel nihil ipsam consequatur est quis
-      laboriosam at excepturi! Necessitatibus placeat consequatur corporis
-      saepe!
+    <>
+      <Header />
+      <div className=" w-full h-full text-basic-text">
+        <h2 className="font-bold text-4xl">Top 10 most searched breeds</h2>
 
-{JSON.stringify(data)}
+        <div className="card_topten">
+          <div className="card_topten_image"></div>
 
-    </div>
+          <div className="card_topten_text">
+            <ol className="card_topten_name">
+              <li></li>
+            </ol>
+
+            <div className="card_topten__details"></div>
+          </div>
+        </div>
+
+        {/* {JSON.stringify(data)} */}
+      </div>
+    </>
   );
 };
 

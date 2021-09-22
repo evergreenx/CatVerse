@@ -14,25 +14,18 @@ const queryClient = new QueryClient();
 const App = () => {
   return (
     <Router>
-
-<Switch>
-
-      <QueryClientProvider client={queryClient}>
-        <div className="mx-10 lg:mx-24">
-        <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/top10">
-            <Header/>
-            <Top10 />
-          </Route>
-        </div>
-
-         
-         
-      </QueryClientProvider>
+      <Switch>
+        <QueryClientProvider client={queryClient}>
+          <div className="mx-10 lg:mx-24">
+            <Route path="/" exact>
+              <Home />
+            </Route>
+            <Route path="/top10">
+              <Top10 />
+            </Route>
+          </div>
+        </QueryClientProvider>
       </Switch>
-
     </Router>
   );
 };
