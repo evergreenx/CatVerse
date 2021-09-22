@@ -8,6 +8,7 @@ import {
   QueryClientProvider,
 } from "react-query";
 import CatCard from "./CatCard";
+import { Link } from "react-router-dom";
 const DiscoverBreed = () => {
   // const queryClient = useQueryClient()
 
@@ -30,9 +31,9 @@ const DiscoverBreed = () => {
           to discover
         </h3>
 
-        <a href="#/" className="font-bold text-lg mt-12">
+        <Link to="/top10" className="font-bold text-lg mt-12">
           See more &#8594;
-        </a>
+        </Link>
       </div>
 
      <CatCard data={data?.data} ></CatCard>
