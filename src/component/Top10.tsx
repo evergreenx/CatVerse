@@ -2,10 +2,7 @@ import React from "react";
 import axios from "axios";
 import {
   useQuery,
-  useMutation,
-  useQueryClient,
-  QueryClient,
-  QueryClientProvider,
+
 } from "react-query";
 import LoaderBar from "../component/LoaderBar";
 
@@ -15,6 +12,7 @@ const Top10 = () => {
     axios.get("https://api.thecatapi.com/v1/breeds")
   );
 
+  console.log(data);
   if (isLoading) {
     return <LoaderBar />;
   }
@@ -25,19 +23,8 @@ const Top10 = () => {
       <div className=" w-full h-full text-basic-text">
         <h2 className="font-bold text-4xl">Top 10 most searched breeds</h2>
 
-        <div className="card_topten">
-          <div className="card_topten_image"></div>
+       
 
-          <div className="card_topten_text">
-            <ol className="card_topten_name">
-              <li></li>
-            </ol>
-
-            <div className="card_topten__details"></div>
-          </div>
-        </div>
-
-        {/* {JSON.stringify(data)} */}
       </div>
     </>
   );
