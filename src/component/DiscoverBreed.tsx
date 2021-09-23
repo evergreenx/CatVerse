@@ -1,27 +1,17 @@
-import React, { useEffect } from "react";
 import axios from "axios";
-import {
-  useQuery,
-  useMutation,
-  useQueryClient,
-  QueryClient,
-  QueryClientProvider,
-} from "react-query";
+import { useQuery } from "react-query";
 import CatCard from "./CatCard";
 import { Link } from "react-router-dom";
 import LoaderBar from "./LoaderBar";
 const DiscoverBreed = () => {
-  // const queryClient = useQueryClient()
-
   const { data, isLoading } = useQuery("cats", () =>
     axios.get("https://api.thecatapi.com/v1/breeds")
   );
 
   console.log(data);
-if(isLoading) {
-
-  <LoaderBar/>
-}
+  if (isLoading) {
+    <LoaderBar />;
+  }
   return (
     <div className="bg-basic-grey lg:p-32  p-10 rounded-b-3xl">
       <p className="text-basic-text font-medium text-lg mb-12">

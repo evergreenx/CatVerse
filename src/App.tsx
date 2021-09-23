@@ -2,14 +2,7 @@ import Home from "./component/Home";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Top10 from "./component/Top10";
 
-import {
-  useQuery,
-  useMutation,
-  useQueryClient,
-  QueryClient,
-  QueryClientProvider,
-} from "react-query";
-import Header from "./component/Header";
+import { QueryClient, QueryClientProvider } from "react-query";
 import CatDetails from "./component/CatDetails";
 const queryClient = new QueryClient();
 const App = () => {

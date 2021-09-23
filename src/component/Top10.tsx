@@ -23,7 +23,7 @@ const Top10 = () => {
         <h2 className="font-bold text-4xl">Top 10 most searched breeds</h2>
 
         {data?.data.slice(0, 10).map((i: any) => {
-          return <CardTopTen data={i}  />;
+          return <CardTopTen data={i} key={i.id} />;
         })}
       </div>
 

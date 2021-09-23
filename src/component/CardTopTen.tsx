@@ -19,16 +19,14 @@ const CardTopTen = ({ data }: cardToptenTypes) => {
 
         <div className="card_topten_text w-full mt-12 ">
           <p className="card_topten_name  font-semibold text-4xl list-disc">
-            
-              <Link
-                to={{
-                  // eslint-disable-next-line no-useless-concat
-                  pathname: "/cat/" + `${data.name}/`,
-                }}
-              >
-                {data?.name}
-              </Link>
-            
+            <Link
+              to={{
+                // eslint-disable-next-line no-useless-concat
+                pathname: "/cat/" + `${data.name}/`,
+              }}
+            >
+              {data?.name}
+            </Link>
           </p>
 
           <div className="card_topten__description font-medium text-lg">

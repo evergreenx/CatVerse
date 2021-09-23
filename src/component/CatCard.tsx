@@ -1,5 +1,3 @@
-import React from "react";
-
 type catCardtype = {
   data: string[];
 };
@@ -11,7 +9,7 @@ const CatCard = ({ data }: catCardtype) => {
 {isLoading ? 'Loading data' : 'loadede'} */}
       {data?.slice(0, 4).map((item: any) => {
         return (
-          <div className="">
+          <div className="" key={item.id}>
             <img
               src={item?.image?.url}
               alt="cats"
