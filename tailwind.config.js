@@ -10,6 +10,7 @@ module.exports = {
         primary: "#FB9333",
         'basic-grey':'#E3E1DC',
         'basic-text' : '#291507',
+       'empty' :'#E0E0E0' ,
         
         
         'hero-action':' #FFF0DC',

@@ -10,6 +10,7 @@ import {
   QueryClientProvider,
 } from "react-query";
 import Header from "./component/Header";
+import CatDetails from "./component/CatDetails";
 const queryClient = new QueryClient();
 const App = () => {
   return (
@@ -22,6 +23,10 @@ const App = () => {
             </Route>
             <Route path="/top10">
               <Top10 />
+            </Route>
+
+            <Route path="/cat/:id">
+              <CatDetails />
             </Route>
           </div>
         </QueryClientProvider>

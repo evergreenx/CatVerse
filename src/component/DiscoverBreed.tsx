@@ -9,6 +9,7 @@ import {
 } from "react-query";
 import CatCard from "./CatCard";
 import { Link } from "react-router-dom";
+import LoaderBar from "./LoaderBar";
 const DiscoverBreed = () => {
   // const queryClient = useQueryClient()
 
@@ -17,7 +18,10 @@ const DiscoverBreed = () => {
   );
 
   console.log(data);
+if(isLoading) {
 
+  <LoaderBar/>
+}
   return (
     <div className="bg-basic-grey lg:p-32  p-10 rounded-b-3xl">
       <p className="text-basic-text font-medium text-lg mb-12">
