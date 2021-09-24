@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="bg-black rounded-t-3xl lg:p-32  p-10 hero ">
       <img src={Logo2} alt="logo" className="w-72" />
 
-      <h3 className="text-white font-semibold  lg:text-2xl mb-12 w-64">
+      <h3 className="text-white font-semibold  lg:text-2xl mb-12 w-56">
         Get to know more about your cat breed
       </h3>
 
