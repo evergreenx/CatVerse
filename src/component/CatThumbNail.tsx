@@ -24,7 +24,7 @@ const CatThumbNail = ({ breedid }: CatThumbNailTypes) => {
             <img
               src={i.url}
               alt="cats"
-              className="  rounded-3xl"
+              className="rounded-3xl w-80"
             />
           </div>
         ))}

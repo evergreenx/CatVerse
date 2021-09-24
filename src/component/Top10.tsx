@@ -11,7 +11,6 @@ const Top10 = () => {
     axios.get("https://api.thecatapi.com/v1/breeds")
   );
 
-  console.log(data);
   if (isLoading) {
     return <LoaderBar />;
   }
@@ -19,8 +18,8 @@ const Top10 = () => {
   return (
     <>
       <Header />
-      <div className=" w-full h-full text-basic-text container">
-        <h2 className="font-bold text-4xl">Top 10 most searched breeds</h2>
+      <div className="text-basic-text container px-10">
+        <h2 className="font-bold text-3xl">Top 10 most searched breeds</h2>
 
         {data?.data.slice(0, 10).map((i: any) => {
           return <CardTopTen data={i} key={i.id} />;

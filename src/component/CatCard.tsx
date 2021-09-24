@@ -15,7 +15,7 @@ const CatCard = ({ data }: catCardtype) => {
               alt="cats"
               className=" w-56 h-56 object-cover rounded-3xl"
             />
-            <p className="mt-8 font-semibold text-basic-text">{item.name}</p>
+            <p className="my-8 font-semibold text-basic-text">{item.name}</p>
           </div>
         );
       })}

@@ -24,7 +24,7 @@ const CatDetails = () => {
   return (
     <>
       <Header />
-      <div className="h-full mb-24 ">
+      <div className="h-full mb-24 px-10 ">
         {catdetails?.data.map((i: any) => (
           <div
             className=" text-basic-text flex lg:flex-row flex-col items-center"

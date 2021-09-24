@@ -10,7 +10,7 @@ const App = () => {
     <Router>
       <Switch>
         <QueryClientProvider client={queryClient}>
-          <div className="mx-10 lg:mx-24">
+          <div className="">
             <Route path="/" exact>
               <Home />
             </Route>
