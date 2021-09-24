@@ -6,14 +6,14 @@ import CatImg3 from "../assets/image/image 3.png";
 const Why = () => {
   return (
     <div className="bg-white lg:p-32  p-10 ">
-      <div className="flex justify-between lg:flex-row flex-col ">
-        <div className="w-96 mt-20">
+      <div className="flex justify-between lg:flex-row flex-col w-full ">
+        <div className=" mt-20">
           <hr className="w-16 border-2 border-basic-text bg-basic-text mb-4"></hr>
-          <h3 className="mb-8 text-basic-text text-3xl lg:text-5xl font-bold leading-10 ">
+          <h3 className="mb-8 w-64 text-basic-text text-3xl lg:text-5xl font-bold leading-10 ">
             Why should you have a cat?
           </h3>
 
-          <p className="text-basic-text mb-16 ">
+          <p className="text-basic-text mb-16 w-64 ">
             Having a cat around you can actually trigger the release of calming
             chemicals in your body which lower your stress and anxiety leves
           </p>
