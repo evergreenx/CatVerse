@@ -9,7 +9,7 @@ const Why = () => {
       <div className="flex justify-between lg:flex-row flex-col ">
         <div className="w-96 mt-20">
           <hr className="w-16 border-2 border-basic-text bg-basic-text mb-4"></hr>
-          <h3 className="mb-8 text-basic-text text-5xl font-bold leading-10 ">
+          <h3 className="mb-8 text-basic-text text-3xl lg:text-5xl font-bold leading-10 ">
             Why should you have a cat?
           </h3>
 

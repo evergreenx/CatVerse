@@ -20,7 +20,7 @@ const DiscoverBreed = () => {
       </p>
 
       <div className="flex justify-between lg:flex-row flex-col">
-        <h3 className="text-basic-text text-5xl font-bold leading-10 tracking-wide">
+        <h3 className="text-basic-text text-3xl lg:text-5xl font-bold leading-10 tracking-wide">
           66+ Breeds For you <br />
           to discover
         </h3>
