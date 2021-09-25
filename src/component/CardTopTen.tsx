@@ -8,11 +8,11 @@ const CardTopTen = ({ data }: cardToptenTypes) => {
 
   return (
     <>
-      <div className="card_topten justify-center flex my-20 flex-col lg:flex-row  items-center content-center ">
-        <div className="card_topten_image mx-auto self-center">
+      <div className="card_topten flex-wrap  mx-12 flex my-20 flex-col lg:flex-row ">
+        <div className="card_topten_image  ">
           <img
             src={data?.image?.url}
-            className="rounded-3xl w-64 h-72 object-cover "
+            className="rounded-3xl w-64 h-64 object-cover"
             alt="cat"
           />
         </div>
@@ -29,7 +29,7 @@ const CardTopTen = ({ data }: cardToptenTypes) => {
             </Link>
           </p>
 
-          <div className="card_topten__description font-medium text-lg">
+          <div className="card_topten__description font-medium text-lg w-full">
             {data.description}
           </div>
         </div>
