@@ -52,7 +52,9 @@ const CatDetails = () => {
               </p>
               <p className="flex lg:items-center lg:flex-row flex-col">
                 {" "}
-                <span className="text-base lg:items-center font-bold w-48">Adaptability:</span>
+                <span className="text-base lg:items-center font-bold w-48">
+                  Adaptability:
+                </span>
                 {i.adaptability === 5 ? (
                   <span className="flex">
                     <span className="pill rounded-full mx-6 bg-basic-text w-14 h-3"></span>

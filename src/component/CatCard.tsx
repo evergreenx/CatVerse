@@ -2,18 +2,19 @@ import { Link } from "react-router-dom";
 
 type catCardtype = {
   data: string[];
+  url: string;
 };
 
-const CatCard = ({ data }: catCardtype) => {
+const CatCard = ({ data, url }: catCardtype) => {
   return (
     <div className="flex justify-between lg:flex-row flex-col mt-12 items-center ">
       {/* 
 {isLoading ? 'Loading data' : 'loadede'} */}
-      {data?.slice(0, 4).map((item: any) => {
+      {data?.map((item: any) => {
         return (
           <div className="" key={item.id}>
             <img
-              src={item?.image?.url}
+              src={url}
               alt="cats"
               className=" lg:w-56 lg:h-56 w-52 h-52  object-cover rounded-3xl"
               width="100"

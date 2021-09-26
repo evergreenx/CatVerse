@@ -5,7 +5,6 @@ type cardToptenTypes = {
   data: any;
 };
 const CardTopTen = ({ data }: cardToptenTypes) => {
-
   return (
     <>
       <div className="card_topten flex-wrap  mx-12 flex my-20 flex-col lg:flex-row ">

@@ -10,7 +10,8 @@ const Why = () => {
         <div className=" mt-20">
           <hr className="w-16 border-2 border-basic-text bg-basic-text mb-4"></hr>
           <h3 className="mb-8 w-full lg:w-72 text-basic-text text-3xl lg:text-5xl font-bold leading-10 ">
-            Why should you have<br/> a cat?
+            Why should you have
+            <br /> a cat?
           </h3>
 
           <p className="text-basic-text mb-16 w-64">
@@ -25,19 +26,19 @@ const Why = () => {
 
         <div className="flex lg:flex-row flex-row lg:mt-0 mt-10">
           <div className="mx-6">
-            <img src={CatImg2} alt="image2"  width="300"
-              height="300"/>
+            <img src={CatImg2} alt="image2" width="300" height="300" />
 
-            <img src={CatImg1} alt="image1" width="300"
-            className="mt-10"
-            
-              height="300" />
+            <img
+              src={CatImg1}
+              alt="image1"
+              width="300"
+              className="mt-10"
+              height="300"
+            />
           </div>
 
           <div>
-            <img src={CatImg3} alt="image3"  width="300" 
-            
-              height="300" />
+            <img src={CatImg3} alt="image3" width="300" height="300" />
           </div>
         </div>
       </div>
