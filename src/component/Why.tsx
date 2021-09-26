@@ -28,12 +28,15 @@ const Why = () => {
             <img src={CatImg2} alt="image2"  width="300"
               height="300"/>
 
-            <img src={CatImg1} alt="image1" className="lg:ml-14 mt-7" width="200"
-              height="00" />
+            <img src={CatImg1} alt="image1" width="300"
+            className="mt-10"
+            
+              height="300" />
           </div>
 
           <div>
-            <img src={CatImg3} alt="image3"  width="300"
+            <img src={CatImg3} alt="image3"  width="300" 
+            
               height="300" />
           </div>
         </div>

@@ -15,7 +15,7 @@ const CatCard = ({ data }: catCardtype) => {
             <img
               src={item?.image?.url}
               alt="cats"
-              className=" w-56 h-56 object-cover rounded-3xl"
+              className=" lg:w-56 lg:h-56 w-52 h-52  object-cover rounded-3xl"
               width="100"
               height="100"
             />
