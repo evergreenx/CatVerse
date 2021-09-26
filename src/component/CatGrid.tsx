@@ -27,6 +27,8 @@ const CatGrid = ({ breedid }: CatGridTypes) => {
               src={i.url}
               alt="cats"
               className="object-cover w-72  h-52 rounded-3xl"
+              width="100"
+              height="100"
             />
           </div>
         ))}

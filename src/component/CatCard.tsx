@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 type catCardtype = {
   data: string[];
 };
@@ -14,8 +16,18 @@ const CatCard = ({ data }: catCardtype) => {
               src={item?.image?.url}
               alt="cats"
               className=" w-56 h-56 object-cover rounded-3xl"
+              width="100"
+              height="100"
             />
-            <p className="my-8 font-semibold text-basic-text">{item.name}</p>
+
+            <Link
+              to={{
+                // eslint-disable-next-line no-useless-concat
+                pathname: "/cat/" + `${item.name}/`,
+              }}
+            >
+              <p className="my-8 font-semibold text-basic-text">{item.name}</p>
+            </Link>
           </div>
         );
       })}

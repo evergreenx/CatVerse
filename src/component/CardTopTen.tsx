@@ -14,6 +14,8 @@ const CardTopTen = ({ data }: cardToptenTypes) => {
             src={data?.image?.url}
             className="rounded-3xl w-64 h-64 object-cover"
             alt="cat"
+            width="100"
+            height="100"
           />
         </div>
 

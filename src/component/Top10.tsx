@@ -8,7 +8,8 @@ import CardTopTen from "./CardTopTen";
 import Footer from "./Footer";
 const Top10 = () => {
   const { data, isLoading } = useQuery("catstopten", () =>
-    axios.get("https://api.thecatapi.com/v1/breeds")
+    axios.get("https://api.thecatapi.com/v1/breeds") , 
+     { cacheTime: 5 }
   );
 
   if (isLoading) {

@@ -10,7 +10,7 @@ const Footer = () => {
       </Link>
       <div className="text-lg text-white font-bold">
         &#169;
-        <a href="https://idoevergreen.tech" className="text-sm">created by Ido evergreen</a>
+        {/* <a href="https://idoevergreen.tech" className="text-sm">created by Ido evergreen</a> */}
       </div>
     </footer>
   );

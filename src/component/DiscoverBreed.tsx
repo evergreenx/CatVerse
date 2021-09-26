@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import LoaderBar from "./LoaderBar";
 const DiscoverBreed = () => {
   const { data, isLoading } = useQuery("cats", () =>
-    axios.get("https://api.thecatapi.com/v1/breeds")
+    axios.get("https://api.thecatapi.com/v1/breeds") , 
+     { cacheTime: 5 }
   );
 
   if (isLoading) {

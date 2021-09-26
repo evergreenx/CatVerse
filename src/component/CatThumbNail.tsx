@@ -25,6 +25,8 @@ const CatThumbNail = ({ breedid }: CatThumbNailTypes) => {
               src={i.url}
               alt="cats"
               className="rounded-3xl w-80"
+              width="100"
+              height="100"
             />
           </div>
         ))}
