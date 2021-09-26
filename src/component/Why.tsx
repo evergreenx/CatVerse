@@ -1,7 +1,7 @@
 import React from "react";
-import CatImg1 from "../assets/image/image 1.png";
-import CatImg2 from "../assets/image/image 2.png";
-import CatImg3 from "../assets/image/image 3.png";
+import CatImg1 from "../assets/image/image-1.webp";
+import CatImg2 from "../assets/image/image-2.webp";
+import CatImg3 from "../assets/image/image-3.webp";
 
 const Why = () => {
   return (
